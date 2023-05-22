@@ -1,0 +1,20 @@
+---
+type Icon = {
+  src: string
+  name: string
+}
+
+interface Props {
+  icon: Icon
+}
+
+const { icon } = Astro.props
+---
+
+<div
+  class={`animate-fade-right flex flex-col w-52 lg:w-40 items-center gap-5 px-3 py-3 shadow-md rounded-lg 
+  hover:shadow-2xl duration-150`}
+>
+  <img loading='lazy' width='70' height='70' class='object-cover' src={icon.src} alt={icon.name} />
+  <span class='capitalize font-light'>{icon.name}</span>
+</div>

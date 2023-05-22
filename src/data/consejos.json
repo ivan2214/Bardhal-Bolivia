@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Nota-radiador-2022",
+    "image": "/consejos/Nota-radiador-2022.png",
+    "title": "La importancia de limpiar el sistema de refrigeración de tu motor"
+  },
+  {
+    "name": "Nota-verano-2022",
+    "image": "/consejos/Nota-verano-2022.jpeg",
+    "title": "Consejos para salir con el auto de vacaciones"
+  },
+  {
+    "name": "Imagen-nota-blog",
+    "image": "/consejos/Imagen-nota-blog.jpeg",
+    "title": "La importancia del uso de aditivos para combustible"
+  },
+  {
+    "name": "Imagenes-portada-blog-3",
+    "image": "/consejos/Imagenes-portada-blog-3.jpeg",
+    "title": "¿Cuáles son los productos que tengo que tener en invierno para mi vehículo?"
+  },
+  {
+    "name": "Imagenes-portada-blog-1",
+    "image": "/consejos/Imagenes-portada-blog-1.jpeg",
+    "title": "¿Cuál es la manera correcta de cuidar sus neumáticos?"
+  },
+  {
+    "name": "Imagenes-portada-blog-2",
+    "image": "/consejos/Imagenes-portada-blog-2.jpeg",
+    "title": "¿Qué pasa con el combustible a lo largo del tiempo?"
+  }
+]

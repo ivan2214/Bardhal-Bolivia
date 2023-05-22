@@ -1,0 +1,10 @@
+---
+interface Props {
+  text?: string
+  class?: string
+}
+
+const { text, class: className } = Astro.props
+---
+
+<h2 class={` ${className}  font-bold text-xl lg:text-3xl capitalize`}>{text}</h2>

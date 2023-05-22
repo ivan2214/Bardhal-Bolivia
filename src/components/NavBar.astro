@@ -1,0 +1,56 @@
+<nav>
+  <ul id='menu' class='hidden lg:flex items-center justify-center gap-5'>
+    <li class='hover:text-white transition duration-100 ease-linear'>
+      <a href='/'>Inicio</a>
+    </li>
+    <li class='hover:text-white transition duration-100 ease-linear'>
+      <a href='/productos'>Productos</a>
+    </li>
+    <li class='hover:text-white transition duration-100 ease-linear'>
+      <a href='/consejos'>Consejos Bardahl</a>
+    </li>
+  </ul>
+
+  <div class='flex lg:hidden justify-between'>
+    <div class='flex items-center'>
+      <button
+        aria-label='toggle button'
+        id='toggleButton'
+        type='button'
+        class='text-black hover:text-black focus:outline-none'
+      >
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          class='h-6 w-6'
+          fill='none'
+          viewBox='0 0 24 24'
+          stroke='currentColor'
+        >
+          <path
+            stroke-linecap='round'
+            stroke-linejoin='round'
+            stroke-width='2'
+            d='M4 6h16M4 12h16m-7 6h7'></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const toggleButton = document.getElementById('toggleButton')
+  const mobileMenu = document.getElementById('mobileMenu')
+  const menu = document.getElementById('menu')
+
+  toggleButton.addEventListener('click', function () {
+    mobileMenu.classList.toggle('hidden')
+  })
+
+  mobileMenu.addEventListener('click', function () {
+    mobileMenu.classList.add('hidden')
+  })
+
+  menu.addEventListener('click', function (event) {
+    event.stopPropagation()
+  })
+</script>

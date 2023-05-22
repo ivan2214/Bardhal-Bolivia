@@ -1,0 +1,14 @@
+---
+interface Props {
+  class?: string
+  classSection?: string
+}
+
+const { class: clases, classSection } = Astro.props
+---
+
+<section class=`container mx-auto px-4 py-5 ${clases}`>
+  <div class={`flex items-center flex-col gap-16 py-16 ${classSection}`}>
+    <slot />
+  </div>
+</section>

@@ -1,0 +1,107 @@
+---
+import Heading from '@comp/Heading.astro'
+import Container from '@layouts/Container.astro'
+import Layout from '@layouts/Layout.astro'
+import consejosJSON from '@src/data/consejos.json'
+
+const consejos = [...consejosJSON]
+---
+
+<Layout title='Consejos - Bardahl'>
+  <Container class='py-0' classSection='lg:py-1'>
+    <section class='flex flex-col gap-5 items-center justify-center'>
+      <!-- consejos inviierno -->
+      <section class='flex flex-col lg:flex-row gap-5 items-start justify-center max-w-6xl'>
+        <img
+          width='500'
+          height='100'
+          class='rounded-lg object-cover'
+          src='/consejos/Nota-vacaciones-invierno-2022.jpg'
+          alt='asdsas'
+        />
+        <div class='flex-col flex justify-center items-start gap-10'>
+          <div class='flex flex-col gap-5 items-center justify-center'>
+            <Heading text='Consejos para salir en el auto en vacaciones de invierno' />
+            <p class='font-light text-sm'>
+              Se acercan las vacaciones de invierno, muchos aprovechan para tomarse vacaciones en el
+              país, saliendo a la ruta, en viajes tanto largos como cortos. Dada la amplitud de
+              nuestro país, nos encontramos con variaciones térmicas donde las temperaturas pueden
+              llegan a menos de 0 grados, pudiendo afectar al motor, por eso es importante seguir
+              los siguientes consejos antes de viajar.
+            </p>
+          </div>
+          <!-- Recomendados -->
+          <span class='font-semibold text-sm'
+            >Nuestros <span class='text-cyan-500'>#ConsejosBardahl</span> recomendados:</span
+          >
+          <section class='grid lg:grid-cols-3 grid-cols-2 gap-5 place-items-center'>
+            <a href='https://www.instagram.com/p/CTp5KrFB3qx/'>
+              <img
+                src='/consejos/Consejos-Bardahl-tips-salir-de-la-ruta.jpg'
+                width='200'
+                height='200'
+                alt=''
+                class='rounded-lg'
+              />
+            </a>
+            <a href='https://www.instagram.com/p/CQehcOWjQb4/'>
+              <img
+                src='/consejos/Consejos-Bardahl-viajes-en-moto-1.png'
+                width='200'
+                height='200'
+                alt=''
+                class='rounded-lg'
+              />
+            </a>
+            <a href='https://www.instagram.com/p/CK7KKA1jen6/'>
+              <img
+                src='/consejos/Consejos-Bardahl-tips-salir-de-la-ruta-1.jpg'
+                width='200'
+                height='200'
+                alt=''
+                class='rounded-lg'
+              />
+            </a>
+          </section>
+        </div>
+      </section>
+
+      <div class='flex py-10 flex-col items-center justify-center w-full gap-10'>
+        <Heading text='Galeria de informacion' />
+
+        <!-- galeria -->
+        <section class='grid bg-black grid-cols-2 md:grid-cols-3 gap-0'>
+          {
+            consejos.map((c, index) => (
+              <article class='group transform duration-150 overflow-hidden text-white flex flex-col items-center justify-center relative'>
+                <img
+                  width='100'
+                  height='100'
+                  class='w-full h-full max-w-xs object-cover'
+                  src={c.image}
+                  alt=''
+                />
+
+                <a
+                  href={c.name}
+                  class='text-sm peer group-hover:-translate-y-5 group-hover:text-black  group-hover:bg-bar transform duration-200 ease-linear shadow-2xl py-1 
+              px-3
+               lg:px-4 drop-shadow-2xl h-auto absolute bottom-6'
+                >
+                  <span>{c.title}</span>
+                </a>
+                <div class='w-0 bg-yellow-500 h-1 group-hover:w-full transition-all transform duration-700 ease-in-out' />
+              </article>
+            ))
+          }
+        </section>
+      </div>
+    </section>
+  </Container>
+</Layout>
+
+<style>
+  .article:hover .absolute {
+    width: 100%;
+  }
+</style>

@@ -1,0 +1,22 @@
+---
+import ButtonPrimary from '@comp/ButtonPrimary.astro'
+---
+
+<section
+  class='container h-full w-full min-h-screen flex items-center justify-center flex-col gap-16 lg:px-16 bg-white dark:bg-gray-900 lg:items-start'
+>
+  <div class='flex w-full flex-col items-start justify-center gap-8'>
+    <p class='lg:text-6xl text-9xl font-medium text-black dark:text-bar'>404</p>
+    <span class='sr-only text-red-500'>error</span>
+    <h2 class='text-6xl font-semibold text-gray-800 dark:text-white md:text-6xl lg:text-4xl'>
+      Pagina no encontrada
+    </h2>
+    <p class='text-gray-500 dark:text-gray-400 text-5xl w-auto lg:text-2xl'>
+      Lo sentimos, la pagina que esta buscando no existe. Aqui hay algunos enlaces utiles:
+    </p>
+  </div>
+
+  <div class='w-full lg:w-auto'>
+    <ButtonPrimary text='Volver al inicio' class='text-5xl py-10 lg:text-base lg:py-3' url='/' />
+  </div>
+</section>

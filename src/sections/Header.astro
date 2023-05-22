@@ -1,0 +1,21 @@
+---
+import NavBar from '@comp/NavBar.astro'
+import NavBarMobile from '@comp/NavBarMobile.astro'
+---
+
+<header class='w-full bg-bar container mx-auto sticky top-0 left-0 z-20'>
+  <section class='flex items-center justify-between px-5 lg:px-16 py-2'>
+    <a href='/'>
+      <img
+        loading='lazy'
+        width='80'
+        height='80'
+        src='/logo.webp'
+        alt='Logo de la compañia bardahl, bandera  a cuadros negra con blanca de carreras'
+      />
+    </a>
+
+    <NavBar />
+  </section>
+  <NavBarMobile />
+</header>

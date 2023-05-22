@@ -1,0 +1,20 @@
+---
+import ButtonPrimary from '@comp/ButtonPrimary.astro'
+import CardProduct from '@comp/CardProduct.astro'
+import Heading from '@comp/Heading.astro'
+import Container from '@layouts/Container.astro'
+import productsJson from '@src/data/products.json'
+
+const products = [...productsJson].slice(0, 3)
+---
+
+<Container>
+  <Heading text='Productos Destacados' />
+  <section
+    class='grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] place-items-center w-full lg:gap-16 gap-10'
+  >
+    {products.map((prod) => <CardProduct data={prod} />)}
+  </section>
+
+  <ButtonPrimary imgSrc='/icons/arrow-right.svg' text='Explorar más' url='/productos' />
+</Container>

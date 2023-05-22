@@ -1,0 +1,24 @@
+---
+interface Props {
+  url?: string
+  text?: string
+  imgSrc?: string
+  class?: string
+}
+
+const { url, text, imgSrc, class: className } = Astro.props
+---
+
+<a
+  aria-label={text || 'Ver mas'}
+  href={url || '/productos'}
+  class={`flex hover:text-white hover:bg-black transform duration-150 items-center justify-center gap-3 rounded-lg bg-bar text-black py-3 px-5 ${className}`}
+  ><span>{text || 'Explorar más'}</span>
+  <img
+    loading='lazy'
+    width='30'
+    height='30'
+    src={imgSrc || '/icons/arrow-right.svg'}
+    alt={text || 'Flecha blanca aputando a la izquierda'}
+  />
+</a>

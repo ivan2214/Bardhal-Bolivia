@@ -1,0 +1,56 @@
+---
+import Heading from '@comp/Heading.astro'
+---
+
+<footer
+  class='w-full bg-bar px-4 py-5 flex flex-col items-start justify-center gap-4 container mx-auto lg:flex-row lg:justify-evenly'
+>
+  <div class='flex flex-col items-start gap-4'>
+    <Heading text='Bardahl' class='lg:text-base' />
+    <p class='font-light text-sm'>
+      Productos y servicios que mejoran el rendimiento y la vida útil de los vehículos.
+    </p>
+  </div>
+
+  <div class='flex flex-col items-start gap-6'>
+    <Heading text='Redes' class='lg:text-base' />
+    <div class='flex items-start gap-4'>
+      <a
+        class='hover:bg-white text-clip rounded-full transition duration-150 ease-linear'
+        href='https://twitter.com/Bardahl_ar?s=20'
+      >
+        <img
+          loading='lazy'
+          width='30'
+          height='30'
+          src='/icons/redes/twitter.svg'
+          alt='logo de la compañia de redes sociales Twitter azul y negro'
+        />
+      </a>
+      <a
+        class='hover:bg-white text-clip rounded-full transition duration-150 ease-linear'
+        href='https://www.facebook.com/bardahlbolivia'
+      >
+        <img
+          loading='lazy'
+          width='30'
+          height='30'
+          src='/icons/redes/facebook.svg'
+          alt='logo de la compañia de redes sociales Facebook azul y blanco'
+        />
+      </a>
+      <a
+        class='hover:bg-white text-clip rounded-full transition duration-150 ease-linear'
+        href='https://www.instagram.com/bardahlbolivia/?hl=en'
+      >
+        <img
+          loading='lazy'
+          width='30'
+          height='30'
+          src='/icons/redes/instagram.svg'
+          alt='logo de la compañia de redes sociales Instagram de color rojo y blanco'
+        />
+      </a>
+    </div>
+  </div>
+</footer>

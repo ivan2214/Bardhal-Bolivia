@@ -1,0 +1,44 @@
+---
+import CardIndustria from '@comp/CardIndustria.astro'
+import Heading from '@comp/Heading.astro'
+import Container from '@layouts/Container.astro'
+const icons = [
+  {
+    src: 'icons/icono_agricola.webp',
+    name: 'agricola',
+  },
+  {
+    src: 'icons/icono_construccion.webp',
+    name: 'construccion',
+  },
+
+  {
+    src: 'icons/icono_manufactura.webp',
+    name: 'manufactura',
+  },
+  {
+    src: 'icons/icono_marypesca.webp',
+    name: 'mar y pesca',
+  },
+
+  {
+    src: 'icons/icono_petroleoygas.webp',
+    name: 'petroleo y gas',
+  },
+  {
+    src: 'icons/icono_transporte.webp',
+    name: 'transporte',
+  },
+]
+---
+
+<Container>
+  <Heading text='Industria' />
+  <section class='flex gap-10 lg:gap-10 items-center lg:justify-center justify-center flex-wrap'>
+    {
+      icons.map((icon) => {
+        return <CardIndustria icon={icon} />
+      })
+    }
+  </section>
+</Container>
