@@ -2,12 +2,12 @@
 import Heading from '@comp/Heading.astro'
 import Container from '@layouts/Container.astro'
 import Layout from '@layouts/Layout.astro'
-import AllProducts from '@comp/AllProducts.astro'
+import AllProducts from '@comp/AllProducts.svelte'
 ---
 
 <Layout title='Bienvenidos a Bardahl'>
   <section class='min-h-screen flex items-center justify-center flex-col py-16 gap-10'>
     <Heading text='Todos nuestros productos' />
-    <AllProducts />
+    <AllProducts client:load />
   </section>
 </Layout>
