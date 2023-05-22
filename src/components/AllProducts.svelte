@@ -5,19 +5,14 @@
 
   const productos = [...productsDb]
   const pageSize = 8
-  let loadingImg = false
   let currentPage = 0
 
   let paginatedProducts = []
 
   function updatePaginatedProducts() {
-    loadingImg = true
     const start = currentPage * pageSize
     const end = start + pageSize
     paginatedProducts = productos.slice(start, end)
-    setTimeout(() => {
-      loadingImg = false
-    }, 1000)
   }
 
   onMount(() => {
@@ -46,6 +41,6 @@
 
 <section class="grid grid-cols-2 lg:grid-cols-3 place-items-center w-full lg:gap-10 gap-6">
   {#each paginatedProducts as product}
-    <CardAllProduct {loadingImg} data={product} />
+    <CardAllProduct data={product} />
   {/each}
 </section>

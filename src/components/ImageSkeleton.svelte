@@ -1,5 +1,5 @@
 <script>
-  export let src, className, width, height, alt, id, loadingImg
+  export let src, className, width, height, alt, id
   let cargada = false
 
   $: {
@@ -28,7 +28,7 @@
 </div>
  -->
 
-{#if !cargada || !src || !loadingImg}
+{#if !cargada || !src}
   <div
     role="status"
     class={`max-w-sm w-full p-2 border border-gray-200 rounded shadow animate-pulse ${className} dark:border-gray-300`}

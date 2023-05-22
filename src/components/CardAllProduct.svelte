@@ -1,6 +1,6 @@
 <script>
   import ImageSkeleton from './ImageSkeleton.svelte'
-  export let data, loadingImg
+  export let data
 </script>
 
 <a href={`/productos/${decodeURI(data.name)}`}>
@@ -10,7 +10,6 @@
 lg:h-auto `}
   >
     <ImageSkeleton
-      {loadingImg}
       client:load
       loading="lazy"
       width={'100'}
