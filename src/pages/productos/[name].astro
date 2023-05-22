@@ -17,7 +17,7 @@ const { name } = Astro.params
 const product = prodJson.find((p) => p.name === name)
 ---
 
-<Layout title={product.name}>
+<Layout title={product?.name}>
   <Container class='py-0' classSection='lg:py-10'>
     <section class='w-full lg:grid-cols-2 h-full grid grid-cols-1 gap-8 lg:gap-0'>
       <div>
@@ -25,32 +25,33 @@ const product = prodJson.find((p) => p.name === name)
           id='imgOpenModal'
           width='500'
           height='500'
-          src={product.url}
-          alt={product.descripcion}
+          class='mx-auto border-2 rounded-lg border-bar'
+          src={product?.url}
+          alt={product?.descripcion}
           loading='lazy'
         />
       </div>
       <div class='flex flex-col items-start justify-center gap-5'>
         <div class='flex flex-col items-start gap-3'>
-          <h3 class='font-bold text-2xl capitalize'>{product.name}</h3>
-          <p class='font-light text-sm'>{product.descripcion}</p>
+          <h3 class='font-bold text-2xl capitalize'>{product?.name}</h3>
+          <p class='font-light text-sm'>{product?.descripcion}</p>
         </div>
         <div class='flex flex-col items-start justify-center lg:gap-4 gap-8'>
           <div class='flex flex-row items-center justify-start gap-1 flex-wrap'>
             <span class='font-bold uppercase text-base'>POR QUE USARLO:</span>
-            <p class='font-light text-sm'>{product.whyUseIt}</p>
+            <p class='font-light text-sm'>{product?.whyUseIt}</p>
           </div>
           <div class='flex flex-row items-center justify-start gap-1 flex-wrap'>
             <span class='font-bold uppercase text-base'>BENEFICIOS:</span>
-            <p class='font-light text-sm'>{product.benefic}</p>
+            <p class='font-light text-sm'>{product?.benefic}</p>
           </div>
           <div class='flex flex-row items-center justify-start gap-1 flex-wrap'>
             <span class='font-bold uppercase text-base'>Instrucciones:</span>
-            <p class='font-light text-sm'>{product.instrucctions}</p>
+            <p class='font-light text-sm'>{product?.instrucctions}</p>
           </div>
         </div>
       </div>
     </section>
   </Container>
-  <SmallModal img={product.url} />
+  <SmallModal img={product?.url} />
 </Layout>
