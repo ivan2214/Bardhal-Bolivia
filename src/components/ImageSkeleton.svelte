@@ -31,12 +31,12 @@
 {#if !cargada || !src}
   <div
     role="status"
-    class={`max-w-sm w-full p-2 border border-gray-200 rounded shadow animate-pulse ${className} dark:border-gray-700`}
+    class={`max-w-sm w-full p-2 border border-gray-200 rounded shadow animate-pulse ${className} dark:border-gray-300`}
   >
     <img
       id={id || ''}
-      width={height || '100'}
-      height={width || '100'}
+      width={width || '100'}
+      height={height || '100'}
       src="loadedImage.svg"
       class={`${className} mx-auto`}
       {alt}
@@ -48,8 +48,8 @@
   <img
     id={id || ''}
     loading="lazy"
-    width={height || '100'}
-    height={width || '100'}
+    width={width || '100'}
+    height={height || '100'}
     alt={alt || 'image desription here'}
     class={`object-cover transition mx-auto group-hover:scale-110 ${className} `}
     {src}

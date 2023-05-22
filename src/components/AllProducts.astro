@@ -6,10 +6,6 @@ const productos = [...productsDb]
 const products = productos.slice(0, 8)
 ---
 
-<Container>
-  <section
-    class='grid grid-cols-2 lg:grid-cols-3 place-items-center w-full lg:gap-24 gap-2'
-  >
-    {products.map((prod) => <CardAllProduct data={prod} />)}
-  </section>
-</Container>
+<section class='grid grid-cols-2 lg:grid-cols-3 place-items-center w-full lg:gap-10 gap-6'>
+  {products.map((prod) => <CardAllProduct data={prod} />)}
+</section>
