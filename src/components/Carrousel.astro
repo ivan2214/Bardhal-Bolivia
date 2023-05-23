@@ -144,6 +144,23 @@
         showSlide(index)
       })
     })
+    function autoSlide() {
+      var newIndex = activeIndex + 1
+      if (newIndex >= items.length) {
+        newIndex = 0
+      }
+      showSlide(newIndex)
+    }
+
+    var slideInterval = setInterval(autoSlide, 3000)
+
+    carousel.addEventListener('mouseover', function () {
+      clearInterval(slideInterval)
+    })
+
+    carousel.addEventListener('mouseleave', function () {
+      slideInterval = setInterval(autoSlide, 3000)
+    })
   })
 </script>
 

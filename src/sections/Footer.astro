@@ -6,14 +6,17 @@ import Heading from '@comp/Heading.astro'
   class='w-full bg-zinc-800 text-white px-4 py-5 flex flex-col items-start justify-center gap-4 container mx-auto lg:flex-row lg:justify-evenly'
 >
   <div class='flex flex-col items-start gap-4'>
-    <Heading text='Bardahl' class='lg:text-base text-bar ' />
+    <div class='flex flex-col items-start justify-center gap-3 lg:flex-row'>
+      <img width='30' height='40' src='boliviaFlag.png' />
+      <Heading text='Bardahl' class='lg:text-base text-bar' />
+    </div>
     <p class='font-light text-sm'>
       Productos y servicios que mejoran el rendimiento y la vida útil de los vehículos.
     </p>
   </div>
 
   <div class='flex flex-col items-start gap-6'>
-    <Heading text='Redes' class='lg:text-base text-bar ' />
+    <Heading text='Redes' class='lg:text-base text-bar' />
     <div class='flex items-start gap-4'>
       <a
         class='hover:bg-bar hover:scale-125 text-clip rounded-full transition duration-150 ease-linear'

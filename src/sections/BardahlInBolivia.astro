@@ -1,11 +1,11 @@
 ---
-import ButtonPrimary from '@comp/ButtonPrimary.astro';
+import ButtonPrimary from '@comp/ButtonPrimary.astro'
 import Heading from '@comp/Heading.astro'
 import IframeComponent from '@comp/IframeComponent.astro'
 import Container from '@layouts/Container.astro'
 ---
 
-<Container>
+<Container class="py-4 lg:py-10">
   <section
     class='w-full lg:px-8 flex flex-col lg:flex-row items-center lg:items-start justify-center gap-3'
   >
@@ -13,7 +13,10 @@ import Container from '@layouts/Container.astro'
       <section
         class='flex flex-col items-start justify-center gap-3 max-w-xs 10 lg:border-r-2 border-dashed lg:border-bar lg:pl-5'
       >
-        <Heading text='Bardahl en Bolivia' class='text-4xl lg:text-5xl' />
+        <div class='flex flex-col items-start justify-center gap-2'>
+          <img width='30' height='40' src='boliviaFlag.png' />
+          <Heading text='Bardahl en Bolivia' class='text-4xl lg:text-5xl' />
+        </div>
         <div class='flex flex-col items-start justify-center gap-6 max-w-xs'>
           <h3 class='font-normal text-lg'>Protección confiable para tus máquinas y motores</h3>
           <p class='font-light text-sm max-w-xs leading-7'>
@@ -21,7 +24,7 @@ import Container from '@layouts/Container.astro'
             Bolivia. Nuestros productos innovadores y de calidad superior están diseñados para
             garantizar el rendimiento óptimo de tus vehículos y maquinarias.
           </p>
-          <ButtonPrimary text="Leer sobre Bardahl" url="/sobrenosotros"   />
+          <ButtonPrimary text='Leer sobre Bardahl' url='/sobrenosotros' />
         </div>
       </section>
       <div class='max-w-xs'>
@@ -35,10 +38,9 @@ import Container from '@layouts/Container.astro'
 
     <section class='rounded-lg max-w-xs'>
       <iframe
-        class='rounded-lg max-w-xs'
+        class='rounded-lg max-w-xs h-56'
         src='https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fwww.facebook.com%2Fbardahlbolivia%2Fvideos%2F458576711178108%2F&show_text=false&width=560&t=0'
         width='400'
-        height='420'
         style='border:none;overflow:hidden'
         allowfullscreen='true'
         allow='autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share'></iframe>
