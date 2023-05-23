@@ -1,0 +1,47 @@
+---
+import ButtonPrimary from '@comp/ButtonPrimary.astro';
+import Heading from '@comp/Heading.astro'
+import IframeComponent from '@comp/IframeComponent.astro'
+import Container from '@layouts/Container.astro'
+---
+
+<Container>
+  <section
+    class='w-full lg:px-8 flex flex-col lg:flex-row items-center lg:items-start justify-center gap-3'
+  >
+    <section class='flex flex-col lg:flex-row items-start gap-10'>
+      <section
+        class='flex flex-col items-start justify-center gap-3 max-w-xs 10 lg:border-r-2 border-dashed lg:border-bar lg:pl-5'
+      >
+        <Heading text='Bardahl en Bolivia' class='text-4xl lg:text-5xl' />
+        <div class='flex flex-col items-start justify-center gap-6 max-w-xs'>
+          <h3 class='font-normal text-lg'>Protección confiable para tus máquinas y motores</h3>
+          <p class='font-light text-sm max-w-xs leading-7'>
+            Bardahl ha sido el referente en el cuidado y protección de máquinas y motores en
+            Bolivia. Nuestros productos innovadores y de calidad superior están diseñados para
+            garantizar el rendimiento óptimo de tus vehículos y maquinarias.
+          </p>
+          <ButtonPrimary text="Leer sobre Bardahl" url="/sobrenosotros"   />
+        </div>
+      </section>
+      <div class='max-w-xs'>
+        <p class='font-light text-sm max-w-xs leading-7'>
+          Con un compromiso inquebrantable con el servicio al cliente, nuestro equipo experto está
+          listo para brindarte asesoramiento técnico y resolver tus consultas. Confía en Bardahl
+          para proteger tu inversión y disfrutar de un funcionamiento suave y eficiente.
+        </p>
+      </div>
+    </section>
+
+    <section class='rounded-lg max-w-xs'>
+      <iframe
+        class='rounded-lg max-w-xs'
+        src='https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fwww.facebook.com%2Fbardahlbolivia%2Fvideos%2F458576711178108%2F&show_text=false&width=560&t=0'
+        width='400'
+        height='420'
+        style='border:none;overflow:hidden'
+        allowfullscreen='true'
+        allow='autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share'></iframe>
+    </section>
+  </section>
+</Container>
