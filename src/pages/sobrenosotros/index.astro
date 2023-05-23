@@ -1,18 +1,67 @@
 ---
-import ButtonPrimary from '@comp/ButtonPrimary.astro'
 import Heading from '@comp/Heading.astro'
+import Container from '@layouts/Container.astro'
 import Layout from '@layouts/Layout.astro'
+import TimeLineSection from '@sections/TimeLineSection.astro'
 ---
 
-<Layout title='En construccion'>
-  <section class='min-h-screen h-full bg-bar w-full grid place-items-center px-4 lg:px-0'>
-    <div class='flex flex-col items-center h-full w-full justify-center gap-4'>
-      <Heading text='En construccion' class='text-5xl text-red-500' />
-      <p class='font-extralight text-center text-2xl'>
-        Lo sentimos estamos construyendo esta pagina
-      </p>
-
-      <ButtonPrimary text='Volver al inicio' class='bg-black text-white' url='/' />
-    </div>
-  </section>
+<Layout title='Nosotros'>
+  <Container class='py-10 px-8 flex items-center justify-center gap-3 flex-col'>
+    <section class='flex flex-col lg:items-start items-center gap-5'>
+      <h2 class='font-bold text-4xl'>Nuestra Historia</h2>
+      <section class='flex gap-4 flex-col lg:flex-row items-start justify-center'>
+        <article
+          class='max-w-lg flex flex-col gap-4 items-start justify-start p-0 lg:border-r-2 lg:pl-5 border-bar border-dashed'
+        >
+          <p class='font-light text-sm leading-6'>
+            Desde nuestra fundación en Bolivia, Bardahl se ha destacado como líder en el cuidado y
+            protección de máquinas y motores. Nos hemos comprometido a ofrecer soluciones
+            innovadoras y de calidad que brindan rendimiento superior a los vehículos y maquinarias.
+          </p>
+          <p class='font-light text-sm leading-6'>
+            Comenzamos nuestra historia con una visión clara: ofrecer soluciones innovadoras y de
+            calidad que brinden protección y rendimiento superior. A lo largo de los años, hemos
+            trabajado incansablemente para cumplir y superar esa visión, convirtiéndonos en
+            referentes en el mercado boliviano.
+          </p>
+        </article>
+        <article class='max-w-lg flex flex-col gap-4 items-start justify-start'>
+          <p class='font-light text-sm leading-6'>
+            Gracias a nuestra dedicación constante a la excelencia, nos hemos consolidado como
+            líderes en Bolivia. Nuestro compromiso con la investigación y desarrollo nos ha
+            permitido estar a la vanguardia de la tecnología, desarrollando productos de última
+            generación que marcan la diferencia en el cuidado automotriz e industrial.
+          </p>
+          <p class='font-light text-sm leading-6'>
+            En Bardahl, nos enorgullece brindar soluciones confiables y efectivas que protegen y
+            optimizan el rendimiento de tus equipos. Nuestro equipo experto está siempre dispuesto a
+            brindarte el mejor asesoramiento y soporte técnico para satisfacer tus necesidades.
+          </p>
+        </article>
+      </section>
+    </section>
+    <section class='flex flex-col lg:items-end items-center gap-5'>
+      <h2 class='font-bold text-4xl'>Nuestro Legado</h2>
+      <section class='flex flex-col lg:flex-row-reverse gap-4 items-start justify-center'>
+        <article class='max-w-lg flex flex-col gap-4 items-start justify-start'>
+          <p class='font-light text-sm leading-6'>
+            Nuestro legado en Bolivia se basa en la confianza, calidad y excelencia. Nuestros
+            productos son reconocidos por su protección y rendimiento excepcional. Como socios
+            confiables, brindamos asesoramiento técnico y soluciones personalizadas para el cuidado
+            de máquinas y motores. Miramos hacia el futuro con determinación, comprometidos a
+            liderar el mercado y satisfacer los desafíos cambiantes de la industria.
+          </p>
+        </article>
+        <article
+          class='max-w-lg flex flex-col gap-4 items-start justify-start p-0 lg:border-r-2 lg:pr-5 border-bar border-dashed'
+        >
+          <span class='font-medium text-zinc-800 text-sm leading-6'>
+            ¡Gracias por ser parte de la historia de Bardahl en Bolivia, donde cuidamos y protegemos
+            tus máquinas y motores!
+          </span>
+        </article>
+      </section>
+    </section>
+    <TimeLineSection />
+  </Container>
 </Layout>
