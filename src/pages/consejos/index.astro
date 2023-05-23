@@ -72,7 +72,11 @@ const consejos = [...consejosJSON]
       </section>
 
       <div class='flex py-10 flex-col items-center justify-center w-full gap-10'>
-        <Heading text='Galeria de informacion' />
+        <Heading text='Galeria de consejos' />
+        <span class='font-light text-center
+         text-sm'
+          >Haz clic en las imágenes para explorar nuestros consejos y obtener una mejor experiencia</span
+        >
 
         <!-- galeria -->
         <section class='grid bg-black grid-cols-2 md:grid-cols-3 gap-0'>
@@ -88,7 +92,7 @@ const consejos = [...consejosJSON]
                 />
 
                 <a
-                  href={c.name}
+                  href={`/consejos/${c.name}`}
                   class='text-sm peer group-hover:-translate-y-5 group-hover:text-black  group-hover:bg-bar transform duration-200 ease-linear shadow-2xl py-1 
               px-3
                lg:px-4 drop-shadow-2xl h-auto absolute bottom-6'
