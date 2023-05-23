@@ -3,6 +3,7 @@ import Heading from '@comp/Heading.astro'
 import ImageSkeleton from '@comp/ImageSkeleton.svelte'
 import Container from '@layouts/Container.astro'
 import Layout from '@layouts/Layout.astro'
+import InformationVideo from '@sections/InformationVideo.astro'
 import consejosJSON from '@src/data/consejos.json'
 
 const consejos = [...consejosJSON]
@@ -106,6 +107,8 @@ const consejos = [...consejosJSON]
         </section>
       </div>
     </section>
+
+    <InformationVideo />
   </Container>
 </Layout>
 

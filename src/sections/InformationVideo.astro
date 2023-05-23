@@ -1,0 +1,19 @@
+---
+import Heading from '@comp/Heading.astro'
+import IframeComponent from '@comp/IframeComponent.astro'
+const links = [
+  'https://www.youtube.com/embed/VpeEu0q0zbk?controls…rigin=https%3A%2F%2Fwww.bardahl.com.ar&widgetid=1',
+  'https://www.youtube.com/embed/e1Arcg9WP2E?controls…rigin=https%3A%2F%2Fwww.bardahl.com.ar&widgetid=3',
+  'https://www.youtube.com/embed/m6DWmxCRr4Y?controls…rigin=https%3A%2F%2Fwww.bardahl.com.ar&widgetid=5',
+  'https://www.youtube.com/embed/a5r75hUIjDU?controls…rigin=https%3A%2F%2Fwww.bardahl.com.ar&widgetid=7',
+]
+---
+
+<section class='flex flex-col items-center justify-center gap-4'>
+  <Heading text='Informacion relevante' />
+  <div
+    class="class='lg:px-28 grid px-8 grid-cols-1 py-10 lg:grid-cols-3 place-items-center w-full gap-6 lg:gap-14 overflow-hidden'"
+  >
+    {links.map((link) => <IframeComponent src={link} />)}
+  </div>
+</section>
