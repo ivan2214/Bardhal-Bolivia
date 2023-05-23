@@ -49,6 +49,14 @@ const product = prodJson.find((p) => p.name === name)
             <span class='font-bold uppercase text-base'>Instrucciones:</span>
             <p class='font-light text-sm'>{product?.instrucctions}</p>
           </div>
+          {
+            product.prestaciones && (
+              <div class='flex flex-row items-center justify-start gap-1 flex-wrap'>
+                <span class='font-bold uppercase text-base'>Prestaciones:</span>
+                <p class='font-light text-sm'>{product?.prestaciones}</p>
+              </div>
+            )
+          }
         </div>
       </div>
     </section>

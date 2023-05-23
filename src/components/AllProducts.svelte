@@ -4,7 +4,7 @@
   import CardAllProduct from './CardAllProduct.svelte'
 
   const productos = [...productsDb]
-  const pageSize = 8
+  const pageSize = 15
   let currentPage = 0
 
   let paginatedProducts = []
@@ -23,6 +23,10 @@
     updatePaginatedProducts()
   })
 </script>
+
+<section class="flex flex-col items-start gap-3">
+
+</section>
 
 <div class="flex items-center gap-4 justify-center">
   <button
