@@ -2,7 +2,6 @@
   import { onMount, afterUpdate } from 'svelte'
   import productsDb from '@src/data/products.json'
   import CardAllProduct from './CardAllProduct.svelte'
-  import Pagination from './Pagination.svelte'
 
   const productos = [...productsDb]
   const pageSize = 15
