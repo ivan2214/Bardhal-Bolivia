@@ -16,22 +16,22 @@
       {
         "name": "Juana Pérez",
         "comment": "¡Los productos de Bardahl son increíbles! He notado una mejora significativa en el rendimiento de mi vehículo desde que los utilizo.",
-        "src": "/icons/avatar.webp"
+        "src": "/icons/avatar.png"
       },
       {
         "name": "María Gómez",
         "comment": "Recomiendo totalmente los productos de Bardahl. Han prolongado la vida útil de mi motor y reducido el consumo de combustible.",
-        "src": "/icons/avatar2.webp"
+        "src": "/icons/avatar2.png"
       },
       {
         "name": "Carla Rodríguez",
         "comment": "Soy mecánico de profesión y siempre recomiendo los productos de Bardahl a mis clientes. Su calidad y eficacia son indiscutibles.",
-        "src": "/icons/avatar3.webp"
+        "src": "/icons/avatar3.png"
       },
       {
         "name": "Ana Fernández",
         "comment": "Desde que empecé a usar Bardahl, mi automóvil ha mostrado un mejor desempeño y suavidad en la conducción. ¡Estoy muy satisfecha con los resultados!",
-        "src": "/icons/avatar.webp"
+        "src": "/icons/avatar.png"
       }
     ]
   },

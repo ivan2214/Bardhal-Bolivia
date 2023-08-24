@@ -21,7 +21,7 @@
       id={id || ''}
       width={width || '100'}
       height={height || '100'}
-      src="loadedImage.svg"
+      src="loadedImage.png"
       class={` mx-auto`}
       alt={alt || ''}
     />

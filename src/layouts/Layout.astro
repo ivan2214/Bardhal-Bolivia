@@ -18,7 +18,7 @@ const { title } = Astro.props
       content='Descubre los mejores productos para tu automóvil en el sitio web oficial de Bardahl. Encuentra repuestos de calidad, aceites de alto rendimiento y soluciones avanzadas para el cuidado de tu vehículo. Mejora el desempeño y prolonga la vida útil de tu motor con la tecnología de Bardahl.'
     />
     <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/svg+xml' href='/logo.webp' />
+    <link rel='icon' type='image/svg+xml' href='/logo.png' />
     <meta name='generator' content={Astro.generator} />
     <meta
       name='keywords'
@@ -29,7 +29,7 @@ const { title } = Astro.props
     <meta name='theme-color' content='#000000' />
     <title>{title} - Sitio web de Bardahl</title>
   </head>
-  <body class='container mx-auto overflow-x-hidden w-full h-full p-0 m-0 box-border'>
+  <body class='max-w-screen-2xl mx-auto overflow-x-hidden w-full h-full p-0 m-0 box-border'>
     <Header />
     <slot />
     <Footer />
