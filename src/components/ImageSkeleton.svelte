@@ -37,7 +37,7 @@
       id={id || ''}
       width={width || '100'}
       height={height || '100'}
-      src="loadedImage.svg"
+      src="loadedImage.png"
       class={`${className} mx-auto`}
       {alt}
     />
